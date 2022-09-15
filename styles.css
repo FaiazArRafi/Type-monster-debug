@@ -62,7 +62,7 @@ body {
 
 #result {
   position: relative;
-  top: -200px;
+  top: -450px;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 250px;

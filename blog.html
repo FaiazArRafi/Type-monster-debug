@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-primary text-center mt-3 fs-1">Welcome To My Blog</h1>
+    <section>
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fw-bolder" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is the difference between Local Storage & Session Storage ?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            There are two main types of browser storages: session and local storage. They both have
+                            their own unique benefits and drawbacks that are good to understand. <br>
+                            Their main difference is that local storage data does not expire, whereas session storage
+                            data gets cleared when the user closes its browser window.
+                            Page sessions are valid for only one tab at a time. So, if a user has three tabs open, each
+                            one will have its own page session.
+                            Since local storage is not session-based, all the data must be deleted via javascript or
+                            manually.<br> In conclusion, local storage is best for storing data you want to keep long
+                            term,
+                            even after the user has closed the tab or browser.
+
+                            Session storage is best for storing temporary data or data that should only be accessible
+                            from one tab.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What is the difference between Global Scope & Block Scope ?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            When a variable is globally scoped, it means it is available from anywhere in the program.
+                            Declaring a variable outside a function or a block leads to it being
+                            globally scoped. <br>
+                            When variables are declared within a block, they are block scoped. It means that they can
+                            only be accessed inside the block they were declared in. <br>
+                            Data sharing is possible in global scope as multiple functions can access the same global
+                            variable. On the other hand data sharing is not possible in block scope as data can be
+                            accessed by only one function. <br>
+                            Global scope memory storage is stored on a fixed location decided by the compiler. Block
+                            scope memory storage is stored on the stack unless specified.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How does the Event Loop in Javascript work ?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The event loop is a process that waits for the Call Stack to be clear before pushing
+                            callbacks from the Task Queue to the Call Stack. Once the Stack is clear, the event loop
+                            triggers and checks the Task Queue for available callbacks. If there are any, it pushes it
+                            to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process.
+                            <br>
+                            In simple, the Event Loop job is to monitor the Call Stack and the Callback Queue. If the
+                            Call Stack is empty, the Event Loop will take the first event from the queue and will push
+                            it to the Call Stack, which effectively runs it.
+                            Such an iteration is called a tick in the Event Loop. Each event is just a function
+                            callback.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed fw-bolder" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            How many types of Undefined are there ?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            8 ways to get Undefined- <br>
+                            1. Variable that is not initialized. <br>
+                            2. Function with no return. <br>
+                            3. A parameter that is not passed. <br>
+                            4. If return has nothing on the right side. <br>
+                            5. Property that doesn't exists on an object. <br>
+                            6. Accessing array elements outside of the index range. <br>
+                            7. Deleting an element inside an array. <br>
+                            8. Set a value directly as undefined. <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
